@@ -369,6 +369,7 @@ const PLACES = {
   markt: { name: "Weihnachtszauber Gendarmenmarkt", addr: "Gendarmenmarkt, 10117 Berlin" },
   lutter: { name: "Lutter & Wegner", addr: "Charlottenstraße 56, 10117 Berlin", web: "https://l-w-berlin.de/" },
   f3000: { name: "Frühstück 3000", addr: "Bülowstraße 101, 10783 Berlin", web: "https://fruehstueck3000.com/" },
+  barch: { name: "Bundesarchiv", addr: "Finckensteinallee 63, 12205 Berlin", web: "https://www.bundesarchiv.de/" },
   nng: { name: "Neue Nationalgalerie", addr: "Potsdamer Straße 50, 10785 Berlin", web: "https://www.smb.museum/museen-einrichtungen/neue-nationalgalerie/home/" },
   kadewe: { name: "KaDeWe", addr: "Tauentzienstraße 21-24, 10789 Berlin", web: "https://www.kadewe.de/" },
   ganymed: { name: "Ganymed Brasserie", addr: "Schiffbauerdamm 5, 10117 Berlin", web: "https://www.ganymed-brasserie.de/" },
@@ -497,12 +498,12 @@ const DAYS = [
       { time: "19:00", title: "Kerstmarkt Gendarmenmarkt", img: "lutter-hut", imgCap: "De hut van Lutter & Wegner", img2: "lutter-oesters", img2Cap: "Oesters en champagne", places: ["markt", "lutter"], text: "600 meter lopen, €2 p.p. entree. Oesters en Sekt bij de champagnehut van Lutter & Wegner." },
     ] },
   { id: "do17", num: "Donderdag 17 december", title: "De stad", scene: "lounge", sceneLabel: "lounge",
-    lede: "Uitslapen, een brunch om voor te gaan zitten, de glazen tempel van Mies van der Rohe, en oesters met champagne aan de bar van KaDeWe.",
-    media: [{ img: "f3000-toast", cap: "Brunch bij Frühstück 3000", to: "do17-0" }, { img: "nng-site", cap: "Neue Nationalgalerie", to: "do17-1" }, { img: "oesters", cap: "Oesters op ijs" }],
+    lede: "Uitslapen, een brunch om voor te gaan zitten, 's middags het archief in Lichterfelde, en tegen de avond oesters met champagne aan de bar van KaDeWe.",
+    media: [{ img: "f3000-toast", cap: "Brunch bij Frühstück 3000", to: "do17-0" }, { img: "kadewe-austernbar", cap: "De Austernbar van KaDeWe", to: "do17-2" }, { img: "oesters", cap: "Oesters op ijs" }],
     items: [
       { time: "11:30", title: "Brunch Frühstück 3000", img: "f3000-zaal", imgCap: "Frühstück 3000, Schöneberg", img2: "f3000-toast", img2Cap: "Toast met spiegelei", places: ["f3000"], text: "Schöneberg. Eggs Benedict met kaviaar staat op de kaart. Reserveren." },
-      { time: "13:30", title: "Neue Nationalgalerie", img: "neue-nationalgalerie.jpg", places: ["nng"], highlights: [{"cap": "Maurizio Cattelan, NIGHT (Preis der Nationalgalerie, tot 7 maart 2027)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/e/6/csm_maurizio-cattelan-night_xl_a00f5657ec.jpg"}, {"cap": "Ernst Ludwig Kirchner, Potsdamer Platz, 1914 (Ruin und Rausch, tot 3 januari)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/6/a/csm_XL1._Kirchner_PotsdamerPlatz__001_Anders_xl_70afb8ae06.jpg"}, {"cap": "Otto Dix, De danseres Anita Berber, 1925 (Ruin und Rausch)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/7/0/csm_Ruin-Rausch-NNG-9-Dix-Anita-Berber_xl_xl_xl_bfe3be3e44.jpg"}, {"cap": "Gerhard Richter, Abstraktes Bild, 2016 (100 Werke für Berlin)", "img": "https://www.smb.museum/uploads/tx_smb/schooloffers/schooloffer_80349/J_Gerhard_Richter_Abstraktes_Bild_P_944_2__2016_c_Gerhard_Richter_2023_31032023_xl.jpg"}, {"cap": "Barnett Newman, Who's Afraid of Red, Yellow and Blue IV (Zerreißprobe, deels gesloten)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/b/d/csm_NNG_Zerreissprobe_Barnett_Newman_xl_0a50eadb45.jpg"}, {"cap": "Ulay en Marina Abramović, Rest Energy, 1980 (vanaf 28 november)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/4/3/csm_rest-energy_xl_f6f888e1eb.jpg"}], text: "Tien minuten verderop. Tijdslot kopen via shop.smb.museum." },
-      { time: "16:00", title: "KaDeWe en de Austernbar", img: "kadewe-austernbar", imgCap: "De Austernbar op de zesde", img2: "oesters", img2Cap: "Oesters", places: ["kadewe"], text: "Met de U-Bahn naar Wittenbergplatz. Rondkijken, en dan zes oesters voor €24 met een glas champagne." },
+      { time: "14:00", title: "Bundesarchiv Lichterfelde", fixed: true, places: ["barch"], text: "Rond 13:00 vanaf de brunch naar Lichterfelde. In de leeszaal van 14:00 tot ongeveer 16:00, met uitloop tot 17:00: het familiedossier ligt in het origineel klaar en mag helemaal gefotografeerd worden. Twee leeszaalplaatsen, geboekt en bevestigd. Paspoort of ID van allebei, een volle accu en het bezoekdossier mee; melden bij de portier." },
+      { time: "17:00", title: "KaDeWe en de Austernbar", img: "kadewe-austernbar", imgCap: "De Austernbar op de zesde", img2: "oesters", img2Cap: "Oesters", places: ["kadewe"], text: "Vanuit Lichterfelde naar Wittenbergplatz (reistijd nog nakijken). Rondkijken, en dan zes oesters voor €24 met een glas champagne; de Austernbar is donderdag open tot 20:00." },
       { moment: "do-avond" },
     ] },
   { id: "vr18", num: "Vrijdag 18 december", title: "Het water", scene: "nature", sceneLabel: "merels, roodborstjes en golven",
@@ -543,11 +544,12 @@ const DAYS = [
       { time: "18:30", title: "Eten in Vabali", img: "vabali-lounge", imgCap: "Lounge bij de haard", img2: "vabali-eten", img2Cap: "Eten in Vabali", places: ["vabali"], text: "In badjas aan tafel in het restaurant van de spa, en daarna nog een laatste ronde. Sluitingstijd nakijken; terug naar het hotel is tien minuten lopen en één halte." },
     ] },
   { id: "di22", num: "Dinsdag 22 december", title: "Afscheid", scene: "morning", sceneLabel: "ochtendmerel",
-    lede: "Uitslapen of nog één keer over de stad uitkijken, en dan naar huis.",
-    media: [{ img: "kaefer-ontbijt", cap: "Ontbijt op de Rijksdag" }, { img: "einstein", cap: "Einstein Unter den Linden" }, { img: "brandenburger-tor.jpg", cap: "Brandenburger Tor", to: "opt-di-ontbijt-einstein" }],
+    lede: "Ontbijt, nog één museum, en dan naar huis.",
+    media: [{ img: "kaefer-ontbijt", cap: "Ontbijt op de Rijksdag" }, { img: "einstein", cap: "Einstein Unter den Linden" }, { img: "nng-site", cap: "Neue Nationalgalerie", to: "di22-1" }],
     items: [
       { moment: "di-ontbijt" },
-      { time: "12:45", title: "Naar Hauptbahnhof", fixed: true, places: ["hbf"], text: "Uitchecken, één halte met de S-Bahn." },
+      { time: "10:00", title: "Neue Nationalgalerie", img: "neue-nationalgalerie.jpg", places: ["nng"], highlights: [{"cap": "Maurizio Cattelan, NIGHT (Preis der Nationalgalerie, tot 7 maart 2027)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/e/6/csm_maurizio-cattelan-night_xl_a00f5657ec.jpg"}, {"cap": "Ernst Ludwig Kirchner, Potsdamer Platz, 1914 (Ruin und Rausch, tot 3 januari)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/6/a/csm_XL1._Kirchner_PotsdamerPlatz__001_Anders_xl_70afb8ae06.jpg"}, {"cap": "Otto Dix, De danseres Anita Berber, 1925 (Ruin und Rausch)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/7/0/csm_Ruin-Rausch-NNG-9-Dix-Anita-Berber_xl_xl_xl_bfe3be3e44.jpg"}, {"cap": "Gerhard Richter, Abstraktes Bild, 2016 (100 Werke für Berlin)", "img": "https://www.smb.museum/uploads/tx_smb/schooloffers/schooloffer_80349/J_Gerhard_Richter_Abstraktes_Bild_P_944_2__2016_c_Gerhard_Richter_2023_31032023_xl.jpg"}, {"cap": "Barnett Newman, Who's Afraid of Red, Yellow and Blue IV (Zerreißprobe, deels gesloten)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/b/d/csm_NNG_Zerreissprobe_Barnett_Newman_xl_0a50eadb45.jpg"}, {"cap": "Ulay en Marina Abramović, Rest Energy, 1980 (vanaf 28 november)", "img": "https://www.smb.museum/typo3temp/assets/_processed_/4/3/csm_rest-energy_xl_f6f888e1eb.jpg"}], text: "Eerst uitchecken en de bagage bij de receptie laten. Tijdslot om 10:00 via shop.smb.museum; tot ongeveer 12:00, daarna terug naar het hotel voor de bagage." },
+      { time: "12:45", title: "Naar Hauptbahnhof", fixed: true, places: ["hbf"], text: "Bagage ophalen bij het hotel, één halte met de S-Bahn." },
       { time: "13:31", title: "Trein naar huis", fixed: true, text: "Spoor 14." },
     ] },
 ];
@@ -601,7 +603,7 @@ const TODO = [
   ] },
   { group: "Zodra het kan", items: [
     { id: "t-neues", what: "Neues Museum, za 19 dec 13:30", how: "shop.smb.museum · vanaf ongeveer 21 november" },
-    { id: "t-nng", what: "Neue Nationalgalerie, do 17 dec 13:30", how: "shop.smb.museum · zodra tijdsloten te koop zijn" },
+    { id: "t-nng", what: "Neue Nationalgalerie, di 22 dec 10:00", how: "shop.smb.museum · tijdslot 10:00, zodra tijdsloten te koop zijn" },
   ] },
   { group: "Twee tot drie weken vooraf", items: [
     { id: "t-f3000", what: "Brunch Frühstück 3000, do 17 dec 11:30", how: "fruehstueck3000.com · telefoonnummer van de site nemen" },
@@ -614,8 +616,11 @@ const TODO = [
     { id: "t-fotografiska", opt: true, what: "Fotografiska, zo 20 dec", how: "fotografiska.com · nakijken of een tijdslot nodig is" },
     { id: "t-kerst", what: "Kerstopeningstijden van alles nog eens nakijken", how: "Restaurants, musea, Austernbar, Fischerhütte, veerboot" },
     { id: "t-bvg", what: "Reistijden vrijdag en vertrektijden veerboot F10", how: "BVG-planner" },
+    { id: "t-bvg-do", what: "Reistijden donderdag van deur tot deur: brunch → Lichterfelde → KaDeWe → Ganymed", how: "BVG-planner" },
+    { id: "t-barch-tijden", what: "Openingstijden Bundesarchiv nakijken (do 9:00–19:00)", how: "bundesarchiv.de" },
   ] },
   { group: "Thuis klaarzetten", items: [
+    { id: "t-barch-mee", what: "Voor donderdag: paspoort of ID van allebei, een volle accu en het bezoekdossier", how: "Het bezoekdossier is de pdf in de reismap" },
     { id: "t-app", what: "BVG-app installeren en uitproberen, allebei", how: "Een rit activeer je vlak voor het instappen; 120 minuten geldig" },
     { id: "t-kleding", opt: true, what: "Kleding voor de KitKatClub (en zwart voor Berghain)", how: "Fetish, latex, leer, of glitter en glamour. Geen jeans of sneakers" },
   ] },
@@ -626,6 +631,7 @@ const TODO = [
     { id: "t-cash", what: "Contant geld voor de clubs", how: "KitKatClub €20–25 p.p., Berghain €30 p.p., kerstmarkt €2 p.p." },
   ] },
   { group: "Geregeld", items: [
+    { id: "t-barch", done: true, what: "Leeszaal Bundesarchiv, do 17 dec, twee plaatsen", how: "Geboekt en bevestigd" },
     { id: "t-vabali", done: true, what: "Vabali, ma 21 dec 12:40", how: "Geboekt" },
   ] },
 ];
@@ -639,6 +645,13 @@ if (!state.v2) { // ratings were "moment|option|who"; now "scope|who|dim", and N
   const r = {};
   for (const [k, v] of Object.entries(state.ratings || {})) { const p = k.split("|"); if (p.length === 3 && p[2] === "Marc") r[`${p[0]}|${p[1]}|Marc|optie`] = v; }
   state.ratings = r; state.v2 = true;
+}
+if (!state.v3) { // 28 Nov 2026: Neue Nationalgalerie moved from Thursday (do17-1) to Tuesday (di22-1)
+  const mv = (o, f) => { for (const k of Object.keys(o || {})) { const n = f(k); if (n !== k) { o[n] = o[k]; delete o[k]; } } };
+  mv(state.ratings, k => k.startsWith("do17-1|") ? "di22-1|" + k.slice(7) : k);
+  mv(state.alts, k => k.startsWith("do17-1|") ? "di22-1|" + k.slice(7) : k);
+  mv(state.comments, k => k === "do17-1" ? "di22-1" : k);
+  state.v3 = true;
 }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} renderExport(); }
 
@@ -1238,7 +1251,7 @@ document.getElementById("mailBtn").addEventListener("click", async () => {
 });
 document.getElementById("resetBtn").addEventListener("click", () => {
   if (!confirm("Alle hartjes, keuzes, opmerkingen, alternatieven en vinkjes wissen?")) return;
-  state = { ratings: {}, picks: {}, comments: {}, todo: {}, alts: {}, v2: true }; save(); renderDays(); renderTodo(); observe();
+  state = { ratings: {}, picks: {}, comments: {}, todo: {}, alts: {}, v2: true, v3: true }; save(); renderDays(); renderTodo(); observe();
 });
 </script>
 </body>
