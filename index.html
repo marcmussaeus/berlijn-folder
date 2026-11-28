@@ -440,6 +440,8 @@ Object.assign(IMG, {
   "cecconis-eten": "https://www.cecconisrestaurants.com/media/2g0nzugp/mariell-lindhansen-0052.jpg?width=1200",
   "einstein-zaal": "https://images.squarespace-cdn.com/content/v1/60f46d57bae0ec6974d3699f/1667161621390-3F752GJODX1P09X1S2SK/einstein-unterdenlinden-berlin-restaurant-cafe-esszimmer-brandenburgertor-victoria-communications-4-3.jpg?format=1000w",
   "vabali-eten": "https://www.merian.de/uploads/media/jalag-4x3/01/8711-vabali-spa-essen-gastronomie.jpg?v=1-0",
+  "barch-foyer": "https://www.bundesarchiv.de/assets/bundesarchiv/de/_processed_/6/3/csm_bundesarchiv-lichterfelde_foyer_B_198_Bild-2022-0625-062_b9fa85ca42.jpg",
+  "barch-lesesaal": "https://www.bundesarchiv.de/assets/bundesarchiv/de/_processed_/1/4/csm_B_198_Bild-2017-0220-034-web_b66f10cf49.jpg",
   "einstein": "https://images.squarespace-cdn.com/content/v1/60f46d57bae0ec6974d3699f/1626636870975-88L5XQGTG63WSY3V6OL2/EINSTEIN+Unter+den+Linden+Berlin+%281%29.JPG?format=1000w",
 });
 
@@ -460,6 +462,7 @@ const CREDITS = [
   ["Kunstwerken bij Fotografiska", "de website van het museum (fotografiska.com), met de rechten bij de kunstenaars", "alleen voor eigen gebruik", "#"],
   ["Binnenplaats en interieur van Father Carpenter", "daymaker.travel", "alleen voor eigen gebruik", "https://www.daymaker.travel/"],
   ["French toast bij Father Carpenter (2022)", "Brian's Coffee Spot", "alleen voor eigen gebruik", "https://www.brian-coffee-spot.com/2022/06/13/father-carpenter/"],
+  ["Foyer en leeszaal van het Bundesarchiv", "Bundesarchiv (B 198 Bild-2022-0625-062 en B 198 Bild-2017-0220-034), bundesarchiv.de", "alleen voor eigen gebruik", "https://www.bundesarchiv.de/im-archiv-recherchieren/archivgut-einsehen-und-nutzen/archivbesuch-vor-ort/"],
   ["Eten in Vabali", "MERIAN (merian.de)", "alleen voor eigen gebruik", "https://www.merian.de/uploads/media/jalag-4x3/01/8711-vabali-spa-essen-gastronomie.jpg?v=1-0"],
   ["Wiener Schnitzel (voorbeeldfoto bij Borchardt)", "JIP", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Wiener_Schnitzel_at_restaurant_Faro,_Helsinki.jpg"],
   ["KaDeWe", "Jochen Teufel", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:KaDeWe_von_Nordosten_(2008).jpg"],
@@ -499,7 +502,7 @@ const DAYS = [
     media: [{ img: "f3000-toast", cap: "Brunch bij Frühstück 3000", to: "do17-0" }, { img: "kadewe-austernbar", cap: "De Austernbar van KaDeWe", to: "do17-2" }, { img: "oesters", cap: "Oesters op ijs" }],
     items: [
       { time: "11:30", title: "Brunch Frühstück 3000", img: "f3000-zaal", imgCap: "Frühstück 3000, Schöneberg", img2: "f3000-toast", img2Cap: "Toast met spiegelei", places: ["f3000"], text: "Schöneberg. Eggs Benedict met kaviaar staat op de kaart. Reserveren." },
-      { time: "14:00", title: "Bundesarchiv Lichterfelde", fixed: true, places: ["barch"], text: "Rond 13:00 vanaf de brunch naar Lichterfelde. In de leeszaal van 14:00 tot ongeveer 16:00, met uitloop tot 17:00: het familiedossier ligt in het origineel klaar en mag helemaal gefotografeerd worden. Twee leeszaalplaatsen, geboekt en bevestigd. Paspoort of ID van allebei, een volle accu en het bezoekdossier mee; melden bij de portier." },
+      { time: "14:00", title: "Bundesarchiv Lichterfelde", fixed: true, img: "barch-foyer", imgCap: "Het foyer in Lichterfelde", img2: "barch-lesesaal", img2Cap: "Leeszaal van het Bundesarchiv", places: ["barch"], text: "Rond 13:00 vanaf de brunch naar Lichterfelde. In de leeszaal van 14:00 tot ongeveer 16:00, met uitloop tot 17:00: het familiedossier ligt in het origineel klaar en mag helemaal gefotografeerd worden. Twee leeszaalplaatsen, geboekt en bevestigd. Paspoort of ID van allebei, een volle accu en het bezoekdossier mee; melden bij de portier." },
       { time: "17:00", title: "KaDeWe en de Austernbar", img: "kadewe-austernbar", imgCap: "De Austernbar op de zesde", img2: "oesters", img2Cap: "Oesters", places: ["kadewe"], text: "Vanuit Lichterfelde naar Wittenbergplatz (reistijd nog nakijken). Rondkijken, en dan zes oesters voor €24 met een glas champagne; de Austernbar is donderdag open tot 20:00." },
       { moment: "do-avond" },
     ] },
